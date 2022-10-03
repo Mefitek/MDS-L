@@ -12,7 +12,7 @@
 	<artifactId>uvod</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>uvod</name>
-	<description>mds cvika 3 - uvod do springu</description>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

@@ -27,7 +27,7 @@ public class StudentsWork
     // • /student vypíše Student: VašeJméno ID: VašeID, Jméno a ID bude tučně
     // • /student?name=Test&id=123456 vypíše místo vašich hodnot zadané hodnoty
     @GetMapping
-    public String testBasic(@RequestParam(defaultValue = "Petr") String name, @RequestParam(defaultValue = "123") String id )
+    public String testBasic(@RequestParam(defaultValue = "Matej") String name, @RequestParam(defaultValue = "229997") String id )
     {
         return
                 "Student: " +
