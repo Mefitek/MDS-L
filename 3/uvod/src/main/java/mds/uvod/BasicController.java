@@ -17,34 +17,34 @@ public class BasicController
         return "<b>Hello MDS!</b>";
     }
 
+    // pristup: localhost:8080/basic/list
     @GetMapping("list")
     public List<String> testList()
     {
         return List.of("Hello","Hello2");
     }
 
+    // pristup: localhost:8080/basic/test1
     @GetMapping("test1")
     // vstupni parametr name
-    // pri zadavani adresy v prohlizeci musim zadat i parametr za test1 = "localhost:8080/test/test1?name=jmeno"
-    public String testParam1(@RequestParam String name)
+    // pri zadavani adresy v prohlizeci musim zadat i parametr = "localhost:8080/basic/test1?name=jmeno"
+    public String testParam1(@RequestParam String jmeno)
     {
-        return String.format("Hello %s Welcome to our page!", name);
+        return String.format("Hello %s Welcome to our page!", jmeno);
     }
 
     @GetMapping("test2")
-    // vstupni parametr name
-    // pri zadavani adresy v prohlizeci musim zadat i parametr za test1 = "localhost:8080/test/test1?name=jmeno"
-    // defaultni parametr (name se nastavi jako user)
-    public String testParam2(@RequestParam(defaultValue = "user") String name)
+    // vstupni parametr jmeno s vychozi hodnotou "user"
+    // uz to nevyhodi error kdyz nezadam vstupni parametr
+    public String testParam2(@RequestParam(defaultValue = "user") String jmeno)
     {
-        return String.format("Hello %s Welcome to our page!", name);
+        return String.format("Hello %s Welcome to our page!", jmeno);
     }
 
     @GetMapping("test2.5")
-    // vstupni parametr name
     // aby se parametr na strance ukazoval jinak nez v kodu
     // name = parametr anotace RequestParam, prejmenujeme ji jako jmeno
-    // localhost:8080/basic/test3?jmeno=PETR
+    // localhost:8080/basic/test2.5?jmeno=PETR
     public String testParam2_5(@RequestParam(defaultValue = "user", name = "jmeno") String name2)
     {
         return String.format("Hello %s Welcome to our page!", name2);
@@ -76,7 +76,7 @@ public class BasicController
        return html;
     }
 
-    // musi to sedet s tou action
+    // action hello kterou zavolala metoda post
     @RequestMapping(value = "hello", method= {RequestMethod.POST, RequestMethod.GET})
     public String helloTest(@RequestParam String name)
     {

@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@ResponseBody
 @RestController
 @RequestMapping("student") // pristup: localhost:8080/student
 
@@ -42,6 +41,7 @@ public class StudentsWork
 
     // • /students vypíše seznam všech studentů ze staženého listu
 
+    // ArrayList typu Student do ktereho ulozim databazi studentu
     ArrayList<Student> students = new ArrayList<>();
 
     {
@@ -104,7 +104,5 @@ public class StudentsWork
 
         return studenti;
     }
-
-
 
 }

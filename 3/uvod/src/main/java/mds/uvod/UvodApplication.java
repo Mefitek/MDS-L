@@ -15,11 +15,10 @@ public class UvodApplication {
 		SpringApplication.run(UvodApplication.class, args);
 	}
 
-
 	@GetMapping
 	@ResponseBody
 	public String hello(){
-		return "Hello World";
+		return "Uvodni stranka localhost:8080/";
 	}
 
 }

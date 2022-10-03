@@ -22,40 +22,14 @@ public class Student {
         this.year = year;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public String getName() {
-        return name;
-    }
-
+    // pouzijeme pro hledani studenta podle id
     public int getId() {
         return id;
     }
 
-    public int getYear() {
-        return year;
+    @Override
+    public String toString() {
+        return ("ID: " +id+ "; narozen: " +year+ "; jmeno: " +name+ " " +surname);
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setYear(Integer year) {
-        this.year = year;
-    }
-
-    public String vypis()
-    {
-        return name + " " + surname + " " + id + " " + year;
-    }
 }
