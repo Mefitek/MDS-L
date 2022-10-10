@@ -1,4 +1,4 @@
-package mds.cv4;
+package mds.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,6 +20,5 @@ public class Cv4Application
 	public String hello(){
 		return "Uvodni stranka localhost:8080/";
 	}
-
 
 }

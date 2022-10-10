@@ -1,4 +1,4 @@
-package mds.cv4;
+package mds.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

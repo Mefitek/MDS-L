@@ -1,8 +1,6 @@
-package mds.cv4;
+package mds.spring;
 
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @ResponseBody
 @RestController
@@ -15,6 +13,8 @@ public class BasicController
     {
         return "<b>Hello MDS basic!</b>";
     }
+
+    // Metoda se statickym HTML
     @GetMapping("form")
     public String helloForm()
     {
