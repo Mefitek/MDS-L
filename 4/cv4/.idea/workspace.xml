@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8c9617-6f81-4ae7-8a8b-ed96280b8b83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mds/cv4/BasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mds/cv4/BasicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mds/cv4/Cv4Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mds/cv4/Cv4Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mds/cv4/Cv4Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mds/cv4/Cv4Application.class" afterDir="false" />
-    </list>
+    <list default="true" id="ce8c9617-6f81-4ae7-8a8b-ed96280b8b83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +32,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2FvxrA3Azb8nzpsN9FHHZ2pu0Oh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
