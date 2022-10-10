@@ -3,8 +3,7 @@ package mds.cv4;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @Controller
@@ -21,4 +20,6 @@ public class Cv4Application
 	public String hello(){
 		return "Uvodni stranka localhost:8080/";
 	}
+
+
 }
