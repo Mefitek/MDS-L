@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feaf817f-6d60-4339-8d31-ce5d1f549f1d" name="Changes" comment="" />
+    <list default="true" id="feaf817f-6d60-4339-8d31-ce5d1f549f1d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../MDS-cv01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MDS-cv01/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4/cv4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4/cv4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../6/streaming-server/src/main/java/mds/streamingserver/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../6/streaming-server/src/main/java/mds/streamingserver/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../6/streaming-server/src/main/resources/templates/player.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../6/streaming-server/src/main/resources/templates/player.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FciwnreX0qFCshRiSST3t6Jx7k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,17 +27,30 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/mefit/Desktop/Bobek/MDS/C/MDS-L/2/CV2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="feaf817f-6d60-4339-8d31-ce5d1f549f1d" name="Changes" comment="" />
       <created>1664798015891</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664798015891</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

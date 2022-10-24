@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ce8c9617-6f81-4ae7-8a8b-ed96280b8b83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mds/cv4/BasicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mds/spring/BasicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mds/cv4/Cv4Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mds/spring/Cv4Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mds/cv4/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mds/spring/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mds/cv4/Cv4ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mds/spring/Cv4ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mds/cv4/BasicController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mds/cv4/Cv4Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../6/streaming-server/src/main/java/mds/streamingserver/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../6/streaming-server/src/main/java/mds/streamingserver/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../6/streaming-server/src/main/resources/templates/player.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../6/streaming-server/src/main/resources/templates/player.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/mefit/Desktop/Bobek/MDS/C/MDS-L/4/cv4",
+    "last_opened_file_path": "C:/Users/mefit/Desktop/Bobek/MDS/C/MDS-L/3/uvod",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>

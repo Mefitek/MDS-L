@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Empty Title</title>
+</head>
+<body>
+    <h2>Formulář parametrů videa</h2>
+    <form action="player" method="post">
+
+        <label for="url">URL Videa:</label>
+        <input type="text" id="url" name="url"><br><br>
+
+        <label for="sirka">Šířka videa:</label>
+        <input type="text" id="sirka" name="sirka"><br><br>
+
+        <label for="muted">Muted:</label>
+        <input type="checkbox" id="muted" name="muted"><br><br>
+
+        <label for="autoplay">Autplay:</label>
+        <input type="checkbox" id="autoplay" name="autoplay"><br><br>
+
+        <input type="submit" value="Post">
+    </form>
+</body>
+</html>

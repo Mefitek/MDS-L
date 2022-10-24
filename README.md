@@ -1,6 +1,6 @@
 # MDS-L
 
-Pred urpavami:
+Pred upravami:
 1) Pravym do slozky -> Git Bash Here
 2) (pokud jeste slozku repozitare v PC nemam) git clone <odkaz na repozitar> (napr github.com/Mefitek/MDS-L)
 3) git pull

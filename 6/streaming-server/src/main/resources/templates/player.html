@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Empty Title</title>
+</head>
+<body>
+    <h2>Video URL</h2>
+    <video width="1000" th:height="${sirka}" controls muted autoplay poster="https://raw.githubusercontent.com/ENeMy235/MDS/main/Screen1.jpg">
+        <source th:src= "${url}" type="video/mp4">
+    </video>
+</body>
+</html>
