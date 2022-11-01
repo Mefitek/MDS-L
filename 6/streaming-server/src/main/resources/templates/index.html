@@ -6,21 +6,27 @@
 </head>
 <body>
     <h2>Formulář parametrů videa</h2>
-    <form action="player" method="post">
 
-        <label for="url">URL Videa:</label>
-        <input type="text" id="url" name="url"><br><br>
+    <form action="dashPlayer" method="post">
 
-        <label for="sirka">Šířka videa:</label>
-        <input type="text" id="sirka" name="sirka"><br><br>
+        <input type="radio" id="local" name="url" value="file">
+        <label for="local">Lokální video</label><br>
 
-        <label for="muted">Muted:</label>
-        <input type="checkbox" id="muted" name="muted"><br><br>
+        <input type="radio" id="urlVideo" name="url" value="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+        <label for="urlVideo">URL video</label><br>
 
-        <label for="autoplay">Autplay:</label>
-        <input type="checkbox" id="autoplay" name="autoplay"><br><br>
+        <input type="radio" id="dashStream" name="url" value="dash/manifest.mpd">
+        <label for="dashStream">Dash stream</label><br>
 
-        <input type="submit" value="Post">
+        <input type="radio" id="dashStreamURL" name="url" value="https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd">
+        <label for="dashStreamURL">Dash stream URL</label><br>
+
+        <input type="radio" id="hlsStream" name="url" value="hls/playlist.m3u8">
+        <label for="hlsStream">HLS stream</label><br>
+
+        <input type="submit" value="Přehrát vybrané">
+
     </form>
+
 </body>
 </html>

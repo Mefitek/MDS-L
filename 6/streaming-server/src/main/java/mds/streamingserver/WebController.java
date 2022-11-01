@@ -5,6 +5,7 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.HandlerMapping;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.ServletException;
@@ -24,7 +25,7 @@ public class WebController
     }
 
     // File toho videa
-    private final static File MP4_FILE = new File("C:\\Users\\mefit\\Desktop\\Bobek\\MDS\\C\\MDS-L\\6\\BigBuckBunny.mp4");
+    private final static File MP4_FILE = new File("C:\\Users\\mefit\\Pictures\\MDS\\Videosoubory\\test8.mkv");
 
     // mapovaci metoda video se odkazuje na html a to se odkazuje zpatky na wholeFile()
 
@@ -71,6 +72,63 @@ public class WebController
         model.addAttribute("autoplay", autoplay);
 
         return "player";
+    }
+
+    // -- Ukol - stream
+
+
+    // -- Adaptivni stream
+
+    private final static String HLS_PATH = "C:\\Users\\mefit\\Pictures\\MDS\\HLS\\";
+    private final static String DASH_PATH = "C:\\Users\\mefit\\Pictures\\MDS\\MPEG-DASH\\";
+
+    //
+    @RequestMapping(value = {"/dash/{file}", "/hls/{file}", "/hls/{quality}/{file}"}, method = RequestMethod.GET)
+    public void adaptive_streaming(@PathVariable("file") String file,
+                                   @PathVariable(value="quality", required=false) String quality,
+                                   HttpServletRequest request,
+                                   HttpServletResponse response) throws ServletException, IOException
+    {
+        //funkce: jako byterange, ale nebude se predavat jen 1 soubor, ale bude to fungovat globalnejs
+        File STREAM_FILE = null;
+
+        String handle = (String)request.getAttribute(HandlerMapping.BEST_MATCHING_PATTERN_ATTRIBUTE);
+
+        switch (handle)
+        {
+            case "/dash/{file}":
+                STREAM_FILE = new File (DASH_PATH + file);
+                break;
+
+            case "/hls/{file}":
+                STREAM_FILE = new File(HLS_PATH + file);
+                break;
+
+            case "/hls/{quality}/{file}":
+                STREAM_FILE = new File(HLS_PATH + quality + "\\" +file);
+                break;
+
+            default:
+        }
+
+        request.setAttribute(MyResourceHttpRequestHandler.ATTR_FILE, STREAM_FILE);
+        handler.handleRequest(request, response);
+
+    }
+
+    @RequestMapping(value = "dashPlayer", method = {RequestMethod.GET, RequestMethod.POST})
+    public String dashPlayer(@RequestParam String url,
+                             Model model)
+    {
+        model.addAttribute("url", url); //predavani url modelem
+        return "dashPlayer";
+    }
+
+
+    @GetMapping("gallery")
+    public String gallery()
+    {
+        return "gallery";
     }
 
     @GetMapping("index")
